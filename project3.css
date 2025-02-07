@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.Signup-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 350px;
+}
+
+.title h2 {
+    text-align: center;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.container-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-details input[type="text"],
+.container-details input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.container-details input[type="button"] {
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-details input[type="button"]:hover {
+    background-color: black;
+}
+
+.container-details a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.container-details a:hover {
+    text-decoration: underline;
+}

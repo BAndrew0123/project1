@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: white;
+}
+
+/*NAVBAR SECTION*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: #333;
+}
+.logo {
+    color: white;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.logo a{
+    text-decoration: none; 
+    color: #ccc;
+}
+
+.right ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.right ul li{
+    margin: 0 10px;
+}
+.right ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+.right ul li a:hover{
+    color: #f4a261;
+    transform: translateY(-5px);
+}
+
+#buy {
+    padding: 10px 0px;
+    border-radius: 7px;
+    color: orangered;
+    text-decoration: underline;
+}
+
+.menu-icon{
+    display: none;
+}
+.close-icon{
+    display: none;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a height for the hero section */
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the section */
+    filter: blur(2px); /* Adds blur effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    color: white; 
+    text-align: center;
+    width: 80%; 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #111;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); Adds shadow for better contrast */
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f4a261;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e76f51;
+}
+
+/* .wave-separator {
+    position: relative;
+    background-color: #fcf5f5; /* Matches the hero section's background color 
+}*/
+
+
+/* .wave-separator svg {
+    display: block;
+    width: 100%;
+    height: auto;
+} */ 
+
+
+/*ABOUT SECTION*/
+
+.about-section{
+    background-color: #fff2e6;
+
+}
+.about-section h2 {
+    text-align: center; 
+    padding: 30px 0px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #111;
+    padding: 10px 10px;
+    line-height: 1.5;
+}
+.about-section a{
+    cursor: pointer;
+}
+.about-section span{
+    font-weight: 700;
+}
+
+
+.map-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.map-section h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 1000px; /* Restricts the maximum width */
+    height: 400px;
+    border-radius: 10px;
+}
+
+/*GALLERY SECTION*/
+
+.gallery-section {
+    padding: 50px 0;
+    background-color: #fff2e6;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.house-info {
+    padding: 20px;
+}
+
+.house-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.house-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.house-info .description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e76f51;
+}
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-item {
+    width: 30%;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 1.8rem;
+    color: #f4a261;
+    margin-right: 10px;
+}
+
+
+
+/* Contact Form */
+.contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e76f51;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+
+/* Unified Media Query for All Responsiveness */
+@media screen and (max-width: 768px) {
+    /* NAVBAR */
+    .right .nav-links {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right .nav-links.active {
+        display: flex; /* Show navbar links when active */
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .right .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .right .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-content button {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    /* Map Section */
+    .map-container iframe {
+        height: 300px;
+    }
+
+    /* Gallery Section */
+    .gallery-title {
+        font-size: 2rem;
+    }
+
+    .gallery-description {
+        font-size: 1.1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    /* Contact Section */
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}

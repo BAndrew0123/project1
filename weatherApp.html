@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-----Search Section--------------->
+        <div class="search-section">
+            <div class="input-wrapper">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="search-input" placeholder="Enter city name">
+            </div>
+            <button class="location-btn">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <!-----Weather Section--------------->
+        <div class="weather-section">
+                    <!-----Current Weather Section--------------->
+            <div class="current-weather">
+                <img src="/pictures/clouds.svg" alt="" class="weather-icon">
+                <h2 class="temperature">00 <span> °C </span></h2>
+                <p class="description">Weather Description</p>
+            </div>
+
+                    <!-----Hourly weather Section--------------->
+            <div class="hourly-weather">
+                <ul class="weather-list"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="weatherApp.js"></script>
+</body>
+</html>

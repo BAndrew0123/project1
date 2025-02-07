@@ -66,7 +66,7 @@ document.getElementById("addTaskBtn").addEventListener("click", addTask);
 // Add keydown event listener for the input field to handle Enter key
 document.getElementById("taskInput").addEventListener("keydown", function(event) {
     if (event.key === "Enter") { // Check if the pressed key is "Enter"
-        addTask(); // Call the addTask function
+        addTask();
     }
 });
 
